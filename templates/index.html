@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paweł Żurawski Portfolio</title>
+    <link rel="stylesheet" href="../static/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="../static/img/icon_small.png">
+    {{ ckeditor.load() }}
+    {{ ckeditor.config(name='content') }}
+
+</head>
+<body>
+    <div class="main_container">
+        <header>
+
+            <div class="dots">
+                <div class="greenDot"></div>
+                <div class="redDot"></div>
+                <div class="whiteDot"></div>
+            </div>
+
+            <div class="header_welceome"> 
+                <h1>Hi, I'm <span>Paweł Żurawski</span></h1>
+                <h2 class="rajdhani-medium">and I'm a Computer Science Student.</h2>
+            </div>
+
+            <button class="button">KEEP IN TOUCH</button>
+        </header>
+        <div class="about-me">
+            <div class="about-me-text">
+            <h3><span>About</span> me</h3>
+            <p class="rajdhani-medium">My name is Paweł, and I am a second-year Computer Science and Econometrics student at the Warsaw University of Life Sciences. I began my studies in October 2022 after graduating from high school in May of that year. From primary school, I have been passionate about computer science. Initially, I learned how to create graphics, thumbnails, and banners, and later, I became interested in web development. I tried my hand at creating dozens of different websites. I learned HTML to structure my pages and CSS to improve their visual appearance. Naturally, I also gained some knowledge of JavaScript and SASS.</p>
+            <p class="rajdhani-medium">At university, I learned how to program and create simple object-oriented programs in C#. I also gained knowledge in econometrics, mathematical statistics, descriptive statistics, Excel, and R. During my fourth semester, I also learned Python and SQL, which I now see as the foundation of my future career. In the future, I plan to explore libraries and technologies related to machine learning to better analyze data sets.</p>
+            <p class="rajdhani-medium">In May 2024, I began my university internship at KARL STORZ. I am involved in translating medical components and device sets from English to Polish. I learned how to use Adobe Acrobat and work with PDF files. I also worked with internal company data, creating pivot tables and reports. Seeing the potential for automating repetitive tasks that took a long time, I developed an application to make everyday work easier for employees. After my internship, I stayed on at KARL STORZ and continue to gain valuable experience.</p>
+        </div>
+        <div class="about-me-image">
+            <div class="image_box"></div>
+        </div>
+        </div>
+
+
+
+        <div class="ed-crs">
+            <div class="ed-crs-box">
+                <h3><span>Education</span> and Certificates</h3>
+                    <p class="rajdhani-medium">From ending my elementary school I continously learn new technologies and graduate courses at Udemy and Coursera. Now, I am taking part in a professional certification at Coursera to get IBM confirmation. The path contain 10 courses to gain knowledge of data scientist needs, like Programming Language, Statistics, Machine Learning, Enviroments, Databases, etc.</p>
+            </div>
+            <div class="ed-crs-images first">
+                <div class="box">
+                    <a href="https://www.google.com" target="_blank">
+                        <div class="content">
+                            <h4>Data Science Methodology</h4>
+                            <p>CRISP-DM | Data mining</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="box">
+                    <a href="https://www.google.com" target="_blank">
+                        <div class="content">
+                            <h4>Python for Data Science, AI & Development</h4>
+                            <p>Python | Pandas | Numpy</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="box">
+                    <div class="content">
+                        <h4>100 Days of Code: The Complete Python Pro Bootcamp</h4>
+                        <p>Selenium, Beautiful Soup, Request, Flask, Pandas, NumPy, Scikit Learn, Plotly,
+                            and Matplotlib</p>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="content">
+                        <h4>Wprowadzenie do Git i GitHub
+                        </h4>
+                        <p>GITHUB | GIT</p>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="ed-crs-box projects">
+                <h3><span>Projects</span> and skills</h3>
+                    <p class="rajdhani-medium">Below are some of my projects. Some of them are still in progress, but I am constantly updating my work and will be adding more here soon. Some projects focus on data analysis, while others are aimed at creating desktop applications and more. Most of these projects will be written in Python, as it is the language I am most comfortable with and enjoy working with the most.</p>
+            </div>
+            <div class="ed-crs-images second">
+                <div class="box">
+
+                    <div class="content">
+                        <h4>KS Generator</h4>
+                        <p>Application for the company I work to internal use.</p>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="content">
+                        <h4>Playlist generator</h4>
+                        <p>Python | API</p>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="content">
+                        <h4>Flights API Search</h4>
+                        <p>Coming soon.</p>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="content">
+                        <h4>Database of analyzed sets</h4>
+                        <p>Coming soon.</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        
+
+        <footer id="contact">
+            <div class="footer-text">
+                <h3>Contact Me</h3>
+                <p class="rajdhani-medium">I encourage you to get in touch using the form below, which sends an email directly to my private inbox. I will do my best to respond to every message that catches my attention. You can also reach out to me via email at <span>zurawski.paawel@gmail.com</span>. Below, you’ll find links to my other online profiles.</p>
+            </div>
+            <div class="form-box">
+            <form method="POST" action="">
+                {{ form.hidden_tag() }}
+                <div class="form-group">
+                    {{ form.title.label }}<br>
+                    {{ form.title(size=32) }}
+                </div>
+                 <div class="form-group">
+                    {{ form.email.label }}<br>
+                    {{ form.email(size=32) }}
+                </div>
+                <div class="form-group">
+                    {{ form.content.label }}<br>
+                    {{ form.content() }}
+                </div>
+                <button class="submit_button" type="submit">Submit</button>
+            </form>
+        </div>
+            <div class="rights">
+                <div class="socials">
+                <div class="white-square">
+                    <div class="social"><a href="https://www.github.com/zurawskii" target="_blank"><img src="../static/socials/4.png" alt=""></a></div>
+                    <div class="social"><a href="https://www.linkedin.com/in/pawelzurawski/" target="_blank"><img src="../static/socials/1.png" alt=""></a></div>
+                    <div class="social"><a href="https://www.instagram.com/pawexx/" target="_blank"><img src="../static/socials/2.png" alt=""></a></div>
+                </div>
+            </div>
+                <h3 class="rajdhani-semibold">Paweł Żurawski Portfolio &copy;  All rights reserved <script>document.write(new Date().getFullYear())</script></h3>
+            </div>
+        </footer>
+
+
+
+    </div>
+<script>
+    document.querySelector('.button').addEventListener('click', function() {
+        document.getElementById('contact').scrollIntoView({
+            behavior: 'smooth'
+        });
+    });
+    CKEDITOR.replace('editor1', {
+    // Inne opcje konfiguracji
+    removePlugins: 'a11yhelp',
+    ignoreEmptyValue: true,
+    notificationLevel: 0
+});
+</script>
+
+</body>
+</html>

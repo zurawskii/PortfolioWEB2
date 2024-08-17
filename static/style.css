@@ -1,0 +1,689 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.montserrat, #title {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+.rajdhani-light {
+    font-family: "Rajdhani", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+
+.rajdhani-regular {
+    font-family: "Rajdhani", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.rajdhani-medium{
+    font-family: "Rajdhani", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.rajdhani-semibold, label, form button{
+    font-family: "Rajdhani", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+}
+
+.rajdhani-bold {
+    font-family: "Rajdhani", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+body{
+    color: white;
+    font-size: 18px;
+    font-family: aileron, sans-serif;
+    font-style: normal;
+    font-weight: 100;
+}
+
+body .main_container{
+    width: 100%;
+    min-height: 100vh;
+    background-color: #020912;
+}
+
+body .main_container header{
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    flex-direction: column;
+    width: 100%;
+    min-height: 100vh;
+    padding-left: 10%;
+    background: url("../static/img/extended_image.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: scroll;
+}
+
+body .main_container header h1{
+    font-size: 4.5rem;
+}
+
+body .main_container header h2{
+    font-size: 2.3rem;
+    line-height: 150%;
+}
+
+body .main_container header span{
+    color: #00bf63;
+}
+
+.greenDot, .redDot, .whiteDot{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin: 10px;
+}
+
+.dots{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    min-height: 20vh;
+}
+
+.greenDot{
+    background-color: #00bf63;
+    margin-left: 0;
+}
+
+.redDot{
+    background-color: #ff5c5c;
+}
+
+.whiteDot{
+    background-color: #fff;
+    margin-right: 0;
+}
+
+.header_welcome{
+    min-height: 80vh;
+}
+
+.button {
+    padding: 10px 20px;
+    border: 2px solid #00ff99; /* Kolor obramowania (zielony) */
+    border-radius: 25px; /* Zaokrąglone rogi */
+    background-color: transparent; /* Przezroczyste tło */
+    color: white; /* Kolor tekstu */
+    font-family: Arial, sans-serif; /* Czcionka */
+    font-size: 16px; /* Rozmiar tekstu */
+    text-transform: uppercase; /* Wielkie litery */
+    text-decoration: none; /* Brak podkreślenia */
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.3s ease; /* Animacja przy najechaniu */
+    margin-top: 7%;
+}
+
+.button:hover {
+    background-color: #00ff99; /* Zmiana tła przy najechaniu */
+    color: black; /* Zmiana koloru tekstu przy najechaniu */
+}
+
+.button .arrow {
+    margin-left: 10px; /* Odstęp między tekstem a strzałką */
+    transition: margin-left 0.3s ease; /* Animacja przesunięcia strzałki */
+}
+
+.button:hover .arrow {
+    margin-left: 15px; /* Zwiększenie odstępu przy najechaniu */
+}
+
+/* Styl dla strzałki */
+.button::after {
+    content: '→';
+    margin-left: 10px;
+    transition: margin-left 0.3s ease;
+}
+
+.about-me{
+    width: 100%;
+    min-height: 120vh;
+    background-color: #010101;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.about-me .about-me-text{
+    width: 80%;
+    min-height: 40vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 5% 5% 5% 10%;
+}
+
+.about-me .about-me-text h3{
+    font-size: 2.8rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 2rem;
+    margin-top: 4rem;
+}
+
+.about-me .about-me-text span{
+    color: #00bf63;
+}
+
+.about-me .about-me-text p{
+    text-align: justify;
+    font-size: 1.4rem;
+    padding-bottom: 35px;
+}
+
+.about-me .about-me-image{
+    width: 100%;
+    min-height: 80vh;
+}
+
+.about-me .about-me-image .image_box{
+    width: 100%;
+    min-height: 80vh;
+    background: url("../static/img/LaptopPhoto.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+.ed-crs{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    min-height: 100vh;
+    background-color: #040601;
+}
+.ed-crs .ed-crs-box{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: start;
+    width: 80%;
+    min-height: 30vh;
+    padding: 5% 5% 5% 10%;
+}
+.ed-crs h3, footer .footer-text h3{
+    font-size: 2.8rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 2rem;
+    padding-top: 5%;
+}
+.ed-crs h3 span{
+    color: #ff5c5c;
+}
+.ed-crs .ed-crs-box p, footer .footer-text p{
+    text-align: justify;
+    font-size: 1.4rem;
+}
+/* Stylowanie siatki grid */
+.ed-crs .ed-crs-images {
+    width: 80%;
+    min-height: 50vh;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 40px;
+    padding: 20px;
+}
+
+.ed-crs .ed-crs-images .box {
+    position: relative;
+    background-color: #333;
+    overflow: hidden;
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    cursor: pointer;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    display:flex;
+    flex-direction:column;
+    justify-content:flex-end;
+}
+
+.ed-crs .ed-crs-images .box:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+}
+
+/* Stylowanie animacji po najechaniu */
+.ed-crs .ed-crs-images .box::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.ed-crs .ed-crs-images .box:hover::after {
+    opacity: 1;
+}
+
+.ed-crs .ed-crs-images .box .content {
+    position: absolute;
+    bottom: -40%;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 20px;
+    transition: bottom 0.3s ease-in-out;
+}
+
+.ed-crs .ed-crs-images .box:hover .content {
+    bottom: 0;
+}
+
+/* Stylowanie tekstu i tła */
+.ed-crs .ed-crs-images .box .content h4 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.ed-crs .ed-crs-images .box .content p {
+    font-size: 1rem;
+}
+
+.ed-crs .projects span{
+    color: #00bf63;
+}
+
+.ed-crs .ed-crs-images.first .box:nth-child(1){
+    background-image: url("../static/img/01_8-bar-positive.svg");
+}
+
+.ed-crs .ed-crs-images.first .box:nth-child(2){
+    background-image: url("../static/img/01_8-bar-positive.svg");
+}
+
+.ed-crs .ed-crs-images.first .box:nth-child(3){
+    background-image: url("../static/img/udemy-logo-1024x1024.webp");
+}
+
+.ed-crs .ed-crs-images.first .box:nth-child(4){
+    background-image: url("../static/img/udemy-logo-1024x1024.webp");
+}
+
+
+.ed-crs .ed-crs-images.second .box:nth-child(1){
+    background-image: url("../static/img/storz.jpg");
+}
+
+.ed-crs .ed-crs-images.second .box:nth-child(2){
+    background-image: url("../static/img/spotify3.png");
+}
+
+.ed-crs .ed-crs-images.second .box:nth-child(3){
+    background-image: url("../static/img/airplane2.jpg");
+}
+
+.ed-crs .ed-crs-images.second .box:nth-child(4){
+    background-image: url("../static/img/analyzed-sets.jpg");
+}
+
+
+footer{
+    width: 100%;
+    min-height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #040601;
+}
+footer .footer-text{
+    width: 80%;
+    padding: 5% 5% 5% 10%;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    flex-direction: column;
+    min-height: 40vh;
+}
+
+footer .footer-text p{
+    text-align: justify;
+}
+
+.footer-container {
+    width: 80%;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+footer .socials{
+    display: flex;
+    justify-content: center;
+    min-height: 10vh;
+    margin: 70px 0 25px 0;
+}
+footer .socials .white-square{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    width: 80%;
+    min-height: 10vh;
+}
+
+footer .socials .white-square img{
+    padding: 20px 0 20px 0;
+    width: 70%;
+}
+footer .social a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+footer .rights{
+    min-height: 25vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+footer .rights h3{
+    text-align: center;
+    font-size: 1.5rem;
+    padding: 30px 0 50px 0;
+}
+footer .form-box{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+footer form {
+    width: 60%; /* Domyślna szerokość formularza */
+    margin: 0 auto; /* Wyśrodkowanie formularza */
+    display: flex;
+    flex-direction: column; /* Ustawienie pól formularza w kolumnie */
+}
+
+label{
+    letter-spacing: 2px;
+    font-size: 2.3rem;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+#title{
+    width: 60%;
+    height: 50px;
+    font-size: 1.8rem;
+}
+.form-group{
+    padding-bottom: 30px;
+}
+
+/* ------------------------------------------------------------------------------------------------------------------ */
+
+form{
+    display:flex;
+    justify-content:center;
+    flex-direction:column;
+}
+
+/* Stylizacja przycisku formularza */
+form button {
+    background: #ff5c5c; /* Kolor tła przycisku */
+    color: white; /* Kolor tekstu przycisku */
+    border: none; /* Bez obramowania */
+    padding: 15px; /* Wewnętrzne odstępy w przycisku */
+    font-size: 1.4rem; /* Rozmiar czcionki w przycisku */
+    text-transform: uppercase; /* Wielkie litery w przycisku */
+    cursor: pointer; /* Kursor wskazujący */
+    transition: background-color 0.3s; /* Efekt przejścia zmiany koloru tła */
+    width: 35%;
+}
+.footer-text p span{
+    color: #00bf63;
+}
+.submit_button:hover{
+    background-color: #ee4b4b;
+}
+
+/* Ustawienie kropek poziomo w nagłówku */
+body .main_container header .dots {
+    display: flex;
+    flex-direction: row; /* Ustawienie poziomo */
+    align-items: center;
+}
+
+.greenDot, .redDot, .whiteDot {
+    width: 20px; /* Mniejszy rozmiar kropek */
+    height: 20px; /* Mniejszy rozmiar kropek */
+    margin: 5px; /* Mniejszy margines */
+}
+
+/* Stylizacja pól formularza */
+form .form-group {
+    margin-bottom: 30px; /* Odstęp między polami formularza */
+}
+
+form label {
+    font-size: 1.2rem; /* Rozmiar czcionki etykiety */
+}
+
+form input,
+form textarea {
+    width: 100%; /* Pełna szerokość pól formularza */
+    padding: 10px; /* Wewnętrzne odstępy w polach formularza */
+    border-radius: 5px; /* Zaokrąglone rogi */
+    border: 1px solid #ccc; /* Kolor i styl obramowania */
+}
+
+form button:hover {
+    background-color: #ee4b4b; /* Kolor tła przycisku po najechaniu */
+}
+
+
+/* MEDIA QUERIES */
+
+
+/* Mobile Devices (Portrait) */
+/* Ogólne style dla mniejszych ekranów */
+@media (max-width: 768px) {
+    body {
+        font-size: 16px; /* Zmniejszenie rozmiaru czcionki */
+    }
+
+    body .main_container header h1 {
+        font-size: 3rem; /* Mniejszy rozmiar czcionki */
+    }
+
+    body .main_container header h2 {
+        font-size: 1.8rem; /* Mniejszy rozmiar czcionki */
+    }
+
+    .about-me .about-me-text h3 {
+        font-size: 2rem; /* Mniejszy rozmiar czcionki */
+    }
+
+    .about-me .about-me-text p {
+        font-size: 1.2rem; /* Mniejszy rozmiar czcionki */
+    }
+
+    .ed-crs h3 {
+        font-size: 2rem; /* Mniejszy rozmiar czcionki */
+    }
+
+    .ed-crs .ed-crs-box p {
+        font-size: 1.2rem; /* Mniejszy rozmiar czcionki */
+    }
+
+    footer .footer-text h3 {
+        font-size: 2rem; /* Mniejszy rozmiar czcionki */
+    }
+
+    footer .rights h3{
+        font-size: 1rem;
+    }
+    footer .footer-text p {
+        font-size: 1.2rem; /* Mniejszy rozmiar czcionki */
+    }
+
+    form button {
+        width: 80%; /* Szerokość przycisku formularza */
+        align-self:center;
+    }
+
+    footer form {
+        width: 100%; /* Szerokość formularza */
+        padding:25px;
+    }
+    footer .socials .white-square img {
+        width:50%;
+        padding:0;
+    }
+    .ed-crs .ed-crs-images{
+        padding:0;
+    }
+    #title{
+        width:100%;
+    }
+}
+
+/* Dostosowanie dla bardzo małych ekranów (np. telefony) */
+@media (max-width: 480px) {
+    body {
+        font-size: 14px; /* Dalsze zmniejszenie rozmiaru czcionki */
+    }
+
+    body .main_container header h1 {
+        font-size: 2.5rem; /* Dalsze zmniejszenie rozmiaru czcionki */
+    }
+
+    body .main_container header h2 {
+        font-size: 1.5rem; /* Dalsze zmniejszenie rozmiaru czcionki */
+    }
+
+    .about-me .about-me-text h3 {
+        font-size: 1.8rem; /* Dalsze zmniejszenie rozmiaru czcionki */
+    }
+
+    .about-me .about-me-text p {
+        font-size: 1rem; /* Dalsze zmniejszenie rozmiaru czcionki */
+    }
+
+    .ed-crs h3 {
+        font-size: 1.8rem; /* Dalsze zmniejszenie rozmiaru czcionki */
+    }
+
+    .ed-crs .ed-crs-box p {
+        font-size: 1rem; /* Dalsze zmniejszenie rozmiaru czcionki */
+    }
+
+    footer .footer-text h3 {
+        font-size: 1.8rem; /* Dalsze zmniejszenie rozmiaru czcionki */
+    }
+
+    footer .footer-text p {
+        font-size: 1rem; /* Dalsze zmniejszenie rozmiaru czcionki */
+    }
+
+    .button {
+        font-size: 14px; /* Mniejszy rozmiar czcionki przycisku */
+        padding: 8px 16px; /* Mniejsze paddingi przycisku */
+    }
+}
+
+@media (max-width: 768px) {
+    .greenDot, .redDot, .whiteDot {
+        width: 15px; /* Mniejszy rozmiar kropek na mniejszych ekranach */
+        height: 15px; /* Mniejszy rozmiar kropek na mniejszych ekranach */
+        margin: 3px; /* Mniejszy margines na mniejszych ekranach */
+    }
+}
+
+/* Dostosowanie kafelków na mniejszych ekranach */
+@media (max-width: 768px) {
+    .tile {
+        padding: 0.5rem; /* Mniejsze paddingi na mniejszych ekranach */
+    }
+
+    .tile .tile-text {
+        font-size: 1rem; /* Mniejszy rozmiar czcionki */
+    }
+}
+
+
+/* Zwiększenie min-height dla małych ekranów */
+@media (max-width: 768px) {
+    .ed-crs .ed-crs-images {
+        min-height: 200vh; /* Zwiększona wysokość dla ekranów telefonów */
+    }
+}
+
+/* Zwiększenie min-height dla bardzo małych ekranów */
+@media (max-width: 480px) {
+    .ed-crs .ed-crs-images {
+        min-height: 300vh; /* Jeszcze większa wysokość dla bardzo małych ekranów */
+    }
+}
+
+/* Media Query dla małych ekranów */
+@media (max-width: 768px) {
+    footer .footer-text {
+        font-size: 0.8rem; /* Mniejszy rozmiar czcionki na małych ekranach */
+    }
+
+    /* Zwiększenie minimalnej wysokości kontenera, jeśli tekst wychodzi poza granice */
+    footer {
+        min-height: 150px; /* Minimalna wysokość kontenera dla stopki */
+    }
+}
+
+/* Media Query dla bardzo małych ekranów */
+@media (max-width: 480px) {
+    footer .footer-text {
+        font-size: 0.7rem; /* Jeszcze mniejszy rozmiar czcionki na bardzo małych ekranach */
+    }
+
+    footer {
+        min-height: 180px; /* Większa minimalna wysokość kontenera dla stopki */
+    }
+}
+
+
+
+/*.tile{*/
+/*    margin:20px;*/
+/*    width:inherit;*/
+/*    color:white;*/
+/*    font-weight: 600;*/
+/*    text-decoration:none;*/
+/*    text-align:center;*/
+/*}*/
+
+
+
