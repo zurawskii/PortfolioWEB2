@@ -315,36 +315,36 @@ body .main_container header span{
 }
 
 .ed-crs .ed-crs-images.first .box:nth-child(1){
-    background-image: url("../static/img/01_8-bar-positive.svg");
+    background-image: url("../static/img/image2.jpg");
 }
 
 .ed-crs .ed-crs-images.first .box:nth-child(2){
-    background-image: url("../static/img/01_8-bar-positive.svg");
+    background-image: url("../static/img/image2.jpg");
 }
 
 .ed-crs .ed-crs-images.first .box:nth-child(3){
-    background-image: url("../static/img/udemy-logo-1024x1024.webp");
+    background-image: url("../static/img/image2.jpg");
 }
 
 .ed-crs .ed-crs-images.first .box:nth-child(4){
-    background-image: url("../static/img/udemy-logo-1024x1024.webp");
+    background-image: url("../static/img/image2.jpg");
 }
 
 
 .ed-crs .ed-crs-images.second .box:nth-child(1){
-    background-image: url("../static/img/storz.jpg");
+    background-image: url("../static/img/image1.jpg");
 }
 
 .ed-crs .ed-crs-images.second .box:nth-child(2){
-    background-image: url("../static/img/spotify3.png");
+    background-image: url("../static/img/image1.jpg");
 }
 
 .ed-crs .ed-crs-images.second .box:nth-child(3){
-    background-image: url("../static/img/airplane2.jpg");
+    background-image: url("../static/img/image1.jpg");
 }
 
 .ed-crs .ed-crs-images.second .box:nth-child(4){
-    background-image: url("../static/img/analyzed-sets.jpg");
+    background-image: url("../static/img/image1.jpg");
 }
 
 
@@ -415,7 +415,10 @@ footer .rights{
 footer .rights h3{
     text-align: center;
     font-size: 1.5rem;
-    padding: 30px 0 50px 0;
+    padding: 30px 0 10px 0;
+}
+a#freepik{
+    padding-bottom:40px;
 }
 footer .form-box{
     display: flex;
@@ -512,6 +515,16 @@ form button:hover {
 
 /* Mobile Devices (Portrait) */
 /* Ogólne style dla mniejszych ekranów */
+@media (max-width: 1024px){
+    .ed-crs .ed-crs-images {
+    width: 100%;
+    min-height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 2fr));
+    grid-gap: 40px;
+    padding: 20px;
+}
+}
 @media (max-width: 768px) {
     body {
         font-size: 16px; /* Zmniejszenie rozmiaru czcionki */
@@ -566,7 +579,7 @@ form button:hover {
         padding:0;
     }
     .ed-crs .ed-crs-images{
-        padding:0;
+        padding:15px;
     }
     #title{
         width:100%;
